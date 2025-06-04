@@ -1,0 +1,617 @@
+
+Magic 8.3 revision 483 - Compiled on Sun Jun  2 18:57:41 UTC 2024.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Using technology "sky130A", version 1.0.466-0-gbdc9412
+Reading LEF data from file /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 78 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 79 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 112 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 114 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 115 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 121 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 122 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 123 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 156 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 164 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 165 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 167 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 206 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 207 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 209 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 248 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 249 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 251 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 290 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 291 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 797 lines.
+Reading DEF data from file /openlane/designs/register_file/runs/RUN_2025.06.04_17.28.17/results/routing/register_file.def.
+This action cannot be undone.
+  Processed 4 vias total.
+Cell sky130_fd_sc_hd__decap_3 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_ef_sc_hd__decap_12 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__fill_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__decap_8 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__fill_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__decap_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__decap_6 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__diode_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__mux2_8 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__buf_12 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__clkbuf_8 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__clkbuf_16 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__buf_6 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__mux2_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__buf_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__buf_8 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__mux2_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__nand2_8 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__buf_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__clkbuf_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__nor2_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__buf_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__clkbuf_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__and3_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__or3b_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__nand3b_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__nor2_8 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__or3_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__and3b_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__and2_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__mux2_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__and2_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__nand2_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__dlymetal6s2s_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__clkbuf_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__inv_16 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__mux4_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__or2b_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__or2_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o22a_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o211a_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__or2_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__nor2_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__and2b_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a22o_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a21o_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a32o_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o31a_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o21a_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o21ai_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o311a_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o22a_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__clkinv_16 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o221ai_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a22oi_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o221a_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a32o_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o31a_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a31o_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__mux4_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a31o_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a21o_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a22o_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o21a_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a211o_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__or2_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o22a_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o211a_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o211a_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o221a_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__inv_12 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o2111a_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__nor2b_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__and2b_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a32o_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a21o_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o21a_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o21ba_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__o221a_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a21oi_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__nor2_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__a22o_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__nand3_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__dfxtp_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__dfxtp_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__dfxtp_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__clkinv_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__bufinv_8 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__clkinv_1 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__inv_8 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__clkinvlp_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__inv_2 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__clkinv_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__bufinv_16 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__inv_6 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+Cell sky130_fd_sc_hd__inv_4 read from path /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/maglef
+  Processed 676558 subcell instances total.
+  Processed 115 pins total.
+  Processed 2 special nets total.
+  Processed 6633 nets total.
+DEF read: Processed 1555279 lines.
+Moving label "_0017_" from metal2 to via2 in cell register_file.
+Moving label "_0061_" from metal3 to via3 in cell register_file.
+Moving label "_0075_" from metal3 to via2 in cell register_file.
+Moving label "_0170_" from metal2 to via2 in cell register_file.
+Moving label "_0180_" from metal2 to via1 in cell register_file.
+Moving label "_0293_" from metal3 to via3 in cell register_file.
+Moving label "_0304_" from metal1 to via1 in cell register_file.
+Moving label "_0456_" from metal2 to via1 in cell register_file.
+Moving label "_0614_" from metal2 to via2 in cell register_file.
+Moving label "_0625_" from metal2 to via1 in cell register_file.
+Moving label "_0659_" from metal1 to via1 in cell register_file.
+Moving label "_0745_" from metal1 to via1 in cell register_file.
+Moving label "_0786_" from metal2 to via1 in cell register_file.
+Moving label "_0794_" from metal2 to via2 in cell register_file.
+Moving label "_0998_" from metal3 to via3 in cell register_file.
+Moving label "_1038_" from metal2 to via2 in cell register_file.
+Moving label "_1039_" from metal3 to via3 in cell register_file.
+Moving label "_1123_" from metal2 to via2 in cell register_file.
+Moving label "_1135_" from metal2 to via2 in cell register_file.
+Moving label "_1148_" from metal2 to via1 in cell register_file.
+Moving label "_1185_" from metal2 to via1 in cell register_file.
+Moving label "_1206_" from metal2 to via2 in cell register_file.
+Moving label "_1247_" from metal2 to via2 in cell register_file.
+Moving label "_1266_" from metal2 to via2 in cell register_file.
+Moving label "_1285_" from metal2 to via2 in cell register_file.
+Moving label "_1339_" from metal2 to via2 in cell register_file.
+Moving label "_1359_" from metal2 to via2 in cell register_file.
+Moving label "_1362_" from metal2 to via2 in cell register_file.
+Moving label "_1363_" from metal2 to via2 in cell register_file.
+Moving label "_1383_" from metal2 to via2 in cell register_file.
+Moving label "_1398_" from metal2 to via2 in cell register_file.
+Moving label "_1407_" from metal2 to via2 in cell register_file.
+Moving label "_1435_" from metal3 to via3 in cell register_file.
+Moving label "_1461_" from metal3 to via3 in cell register_file.
+Moving label "_1463_" from metal2 to via2 in cell register_file.
+Moving label "_1475_" from metal3 to via3 in cell register_file.
+Moving label "_1494_" from metal2 to via2 in cell register_file.
+Moving label "_1530_" from metal2 to via2 in cell register_file.
+Moving label "_1539_" from metal2 to via2 in cell register_file.
+Moving label "_1542_" from metal3 to via3 in cell register_file.
+Moving label "_1559_" from metal2 to via1 in cell register_file.
+Moving label "_1574_" from metal3 to via3 in cell register_file.
+Moving label "_1589_" from metal2 to via2 in cell register_file.
+Moving label "_1592_" from metal2 to via2 in cell register_file.
+Moving label "_1594_" from metal2 to via2 in cell register_file.
+Moving label "_1595_" from metal2 to via2 in cell register_file.
+Moving label "_1597_" from metal3 to via3 in cell register_file.
+Moving label "_1606_" from metal2 to via2 in cell register_file.
+Moving label "_1620_" from metal2 to via2 in cell register_file.
+Moving label "_1621_" from metal2 to via2 in cell register_file.
+Moving label "_1648_" from metal2 to via2 in cell register_file.
+Moving label "_1690_" from metal3 to via3 in cell register_file.
+Moving label "_1698_" from metal2 to via2 in cell register_file.
+Moving label "_1753_" from metal2 to via2 in cell register_file.
+Moving label "_1754_" from metal2 to via2 in cell register_file.
+Moving label "_1771_" from metal2 to via2 in cell register_file.
+Moving label "_1795_" from metal3 to via3 in cell register_file.
+Moving label "_1805_" from metal3 to via3 in cell register_file.
+Moving label "_1821_" from metal2 to via2 in cell register_file.
+Moving label "_1837_" from metal3 to via3 in cell register_file.
+Moving label "_1842_" from metal2 to via2 in cell register_file.
+Moving label "_1853_" from metal3 to via3 in cell register_file.
+Moving label "_1963_" from metal3 to via3 in cell register_file.
+Moving label "_2001_" from metal2 to via2 in cell register_file.
+Moving label "_2070_" from metal2 to via2 in cell register_file.
+Moving label "_2088_" from metal3 to via3 in cell register_file.
+Moving label "_2091_" from metal2 to via2 in cell register_file.
+Moving label "_2109_" from metal2 to via2 in cell register_file.
+Moving label "_2160_" from metal2 to via2 in cell register_file.
+Moving label "_2179_" from metal3 to via3 in cell register_file.
+Moving label "_2206_" from metal2 to via2 in cell register_file.
+Moving label "_2210_" from metal2 to via2 in cell register_file.
+Moving label "_2221_" from metal2 to via2 in cell register_file.
+Moving label "_2224_" from metal2 to via2 in cell register_file.
+Moving label "_2245_" from metal3 to via3 in cell register_file.
+Moving label "_2255_" from metal2 to via2 in cell register_file.
+Moving label "_2265_" from metal2 to via2 in cell register_file.
+Moving label "_2333_" from metal2 to via2 in cell register_file.
+Moving label "_2338_" from metal2 to via1 in cell register_file.
+Moving label "_2340_" from metal2 to via2 in cell register_file.
+Moving label "_2353_" from metal2 to via2 in cell register_file.
+Moving label "_2364_" from metal1 to via1 in cell register_file.
+Moving label "_2374_" from metal2 to via2 in cell register_file.
+Moving label "_2389_" from metal2 to via2 in cell register_file.
+Moving label "_2393_" from metal3 to via3 in cell register_file.
+Moving label "_2435_" from metal2 to via2 in cell register_file.
+Moving label "_2459_" from metal3 to via3 in cell register_file.
+Moving label "_2467_" from metal2 to via2 in cell register_file.
+Moving label "_2475_" from metal2 to via2 in cell register_file.
+Moving label "_2476_" from metal2 to via2 in cell register_file.
+Moving label "_2480_" from metal2 to via2 in cell register_file.
+Moving label "_2517_" from metal2 to via2 in cell register_file.
+Moving label "_2547_" from metal2 to via2 in cell register_file.
+Moving label "_2552_" from metal2 to via1 in cell register_file.
+Moving label "_2565_" from metal2 to via2 in cell register_file.
+Moving label "_2566_" from metal3 to via3 in cell register_file.
+Moving label "_2570_" from metal2 to via2 in cell register_file.
+Moving label "_2611_" from metal2 to via2 in cell register_file.
+Moving label "_2627_" from metal2 to via2 in cell register_file.
+Moving label "_2641_" from metal2 to via2 in cell register_file.
+Moving label "_2666_" from metal2 to via2 in cell register_file.
+Moving label "_2680_" from metal3 to via3 in cell register_file.
+Moving label "_2683_" from metal3 to via3 in cell register_file.
+Moving label "_2684_" from metal2 to via2 in cell register_file.
+Moving label "_2708_" from metal3 to via3 in cell register_file.
+Moving label "_2719_" from metal2 to via1 in cell register_file.
+Moving label "_2733_" from metal2 to via2 in cell register_file.
+Moving label "_2739_" from metal2 to via2 in cell register_file.
+Moving label "_2762_" from metal3 to via3 in cell register_file.
+Moving label "_2763_" from metal2 to via2 in cell register_file.
+Moving label "_2766_" from metal3 to via3 in cell register_file.
+Moving label "_2783_" from metal2 to via2 in cell register_file.
+Moving label "_2792_" from metal3 to via3 in cell register_file.
+Moving label "_2809_" from metal2 to via2 in cell register_file.
+Moving label "_2813_" from metal2 to via2 in cell register_file.
+Moving label "_2836_" from metal2 to via1 in cell register_file.
+Moving label "_2853_" from metal2 to via2 in cell register_file.
+Moving label "_2897_" from metal2 to via2 in cell register_file.
+Moving label "_2901_" from metal2 to via2 in cell register_file.
+Moving label "_2904_" from metal3 to via3 in cell register_file.
+Moving label "_2906_" from metal2 to via2 in cell register_file.
+Moving label "_2907_" from metal3 to via3 in cell register_file.
+Moving label "_2922_" from metal2 to via2 in cell register_file.
+Moving label "_2933_" from metal2 to via2 in cell register_file.
+Moving label "_2935_" from metal3 to via3 in cell register_file.
+Moving label "_2937_" from metal2 to via2 in cell register_file.
+Moving label "_2951_" from metal2 to via2 in cell register_file.
+Moving label "_2958_" from metal3 to via3 in cell register_file.
+Moving label "_2962_" from metal2 to via2 in cell register_file.
+Moving label "_2963_" from metal2 to via2 in cell register_file.
+Moving label "_2988_" from metal2 to via2 in cell register_file.
+Moving label "_3022_" from metal2 to via2 in cell register_file.
+Moving label "_3026_" from metal2 to via2 in cell register_file.
+Moving label "_3033_" from metal2 to via2 in cell register_file.
+Moving label "_3053_" from metal2 to via2 in cell register_file.
+Moving label "_3056_" from metal2 to via2 in cell register_file.
+Moving label "_3076_" from metal3 to via3 in cell register_file.
+Moving label "_3077_" from metal2 to via2 in cell register_file.
+Moving label "_3082_" from metal2 to via2 in cell register_file.
+Moving label "_3089_" from metal2 to via2 in cell register_file.
+Moving label "_3103_" from metal2 to via2 in cell register_file.
+Moving label "_3104_" from metal2 to via2 in cell register_file.
+Moving label "_3106_" from metal2 to via2 in cell register_file.
+Moving label "_3117_" from metal2 to via2 in cell register_file.
+Moving label "_3142_" from metal3 to via3 in cell register_file.
+Moving label "_3174_" from metal3 to via3 in cell register_file.
+Moving label "_3184_" from metal2 to via2 in cell register_file.
+Moving label "_3197_" from metal2 to via2 in cell register_file.
+Moving label "_3205_" from metal2 to via2 in cell register_file.
+Moving label "_3215_" from metal2 to via2 in cell register_file.
+Moving label "_3226_" from metal2 to via2 in cell register_file.
+Moving label "_3234_" from metal2 to via2 in cell register_file.
+Moving label "_3238_" from metal2 to via1 in cell register_file.
+Moving label "_3243_" from metal2 to via2 in cell register_file.
+Moving label "_3255_" from metal2 to via2 in cell register_file.
+Moving label "_3267_" from metal2 to via2 in cell register_file.
+Moving label "_3277_" from metal2 to via1 in cell register_file.
+Moving label "_3278_" from metal2 to via2 in cell register_file.
+Moving label "_3279_" from metal2 to via2 in cell register_file.
+Moving label "_3280_" from metal2 to via2 in cell register_file.
+Moving label "_3292_" from metal2 to via2 in cell register_file.
+Moving label "_3302_" from metal2 to via2 in cell register_file.
+Moving label "_3306_" from metal3 to via3 in cell register_file.
+Moving label "_3331_" from metal2 to via2 in cell register_file.
+Moving label "_3340_" from metal2 to via2 in cell register_file.
+Moving label "_3360_" from metal2 to via2 in cell register_file.
+Moving label "_3363_" from metal3 to via3 in cell register_file.
+Moving label "_3391_" from metal2 to via2 in cell register_file.
+Moving label "_3392_" from metal2 to via2 in cell register_file.
+Moving label "_3399_" from metal3 to via3 in cell register_file.
+Moving label "_3401_" from metal2 to via2 in cell register_file.
+Moving label "_3438_" from metal2 to via2 in cell register_file.
+Moving label "_3439_" from metal2 to via2 in cell register_file.
+Moving label "_3458_" from metal2 to via2 in cell register_file.
+Moving label "_3464_" from metal3 to via3 in cell register_file.
+Moving label "_3467_" from metal2 to via2 in cell register_file.
+Moving label "_3468_" from metal2 to via2 in cell register_file.
+Moving label "_3469_" from metal2 to via2 in cell register_file.
+Moving label "_3478_" from metal2 to via2 in cell register_file.
+Moving label "_3489_" from metal2 to via2 in cell register_file.
+Moving label "_3519_" from metal2 to via2 in cell register_file.
+Moving label "_3527_" from metal2 to via2 in cell register_file.
+Moving label "_3533_" from metal2 to via2 in cell register_file.
+Moving label "_3540_" from metal3 to via3 in cell register_file.
+Moving label "_3544_" from metal2 to via2 in cell register_file.
+Moving label "_3545_" from metal2 to via2 in cell register_file.
+Moving label "_3568_" from metal2 to via2 in cell register_file.
+Moving label "_3584_" from metal2 to via2 in cell register_file.
+Moving label "_3595_" from metal2 to via2 in cell register_file.
+Moving label "_3606_" from metal2 to via2 in cell register_file.
+Moving label "_3609_" from metal3 to via3 in cell register_file.
+Moving label "_3618_" from metal2 to via2 in cell register_file.
+Moving label "_3621_" from metal2 to via2 in cell register_file.
+Moving label "_3626_" from metal2 to via2 in cell register_file.
+Moving label "_3631_" from metal2 to via2 in cell register_file.
+Moving label "_3632_" from metal2 to via2 in cell register_file.
+Moving label "_3634_" from metal2 to via2 in cell register_file.
+Moving label "_3639_" from metal3 to via3 in cell register_file.
+Moving label "_3643_" from metal2 to via2 in cell register_file.
+Moving label "_3656_" from metal2 to via2 in cell register_file.
+Moving label "_3657_" from metal3 to via3 in cell register_file.
+Moving label "_3662_" from metal2 to via2 in cell register_file.
+Moving label "_3665_" from metal2 to via2 in cell register_file.
+Moving label "_3668_" from metal3 to via3 in cell register_file.
+Moving label "_3690_" from metal2 to via2 in cell register_file.
+Moving label "_3698_" from metal2 to via2 in cell register_file.
+Moving label "_3745_" from metal2 to via2 in cell register_file.
+Moving label "_3757_" from metal2 to via2 in cell register_file.
+Moving label "_3758_" from metal2 to via2 in cell register_file.
+Moving label "_3759_" from metal2 to via2 in cell register_file.
+Moving label "_3761_" from metal3 to via3 in cell register_file.
+Moving label "_3771_" from metal2 to via2 in cell register_file.
+Moving label "_3775_" from metal3 to via3 in cell register_file.
+Moving label "_3777_" from metal2 to via1 in cell register_file.
+Moving label "_3798_" from metal2 to via2 in cell register_file.
+Moving label "_3805_" from metal3 to via3 in cell register_file.
+Moving label "_3808_" from metal2 to via2 in cell register_file.
+Moving label "_3825_" from metal3 to via3 in cell register_file.
+Moving label "_3836_" from metal2 to via2 in cell register_file.
+Moving label "_3854_" from metal2 to via2 in cell register_file.
+Moving label "_3857_" from metal2 to via2 in cell register_file.
+Moving label "_3861_" from metal2 to via2 in cell register_file.
+Moving label "_3876_" from metal2 to via2 in cell register_file.
+Moving label "clknet_1_1_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_2_1_1_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_2_2_1_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_0_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_11_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_13_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_1_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_2_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_3_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_4_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_5_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_6_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_7_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_8_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_4_9_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_5_14_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_5_18_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_5_30_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_5_3_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_5_4_0_clk" from metal2 to via2 in cell register_file.
+Moving label "clknet_5_8_0_clk" from metal3 to via3 in cell register_file.
+Moving label "clknet_5_9_0_clk" from metal3 to via3 in cell register_file.
+Moving label "clknet_leaf_12_clk" from metal2 to via1 in cell register_file.
+Moving label "clknet_leaf_395_clk" from metal2 to via1 in cell register_file.
+Moving label "net1019" from metal2 to via2 in cell register_file.
+Moving label "net1023" from metal3 to via3 in cell register_file.
+Moving label "net1025" from metal2 to via2 in cell register_file.
+Moving label "net1077" from metal2 to via2 in cell register_file.
+Moving label "net1092" from metal2 to via2 in cell register_file.
+Moving label "net1099" from metal2 to via2 in cell register_file.
+Moving label "net1100" from metal2 to via1 in cell register_file.
+Moving label "net1101" from metal2 to via2 in cell register_file.
+Moving label "net1103" from metal2 to via2 in cell register_file.
+Moving label "net1154" from metal2 to via2 in cell register_file.
+Moving label "net1194" from metal2 to via2 in cell register_file.
+Moving label "net1199" from metal3 to via3 in cell register_file.
+Moving label "net1206" from metal3 to via3 in cell register_file.
+Moving label "net124" from metal2 to via2 in cell register_file.
+Moving label "net125" from metal2 to via2 in cell register_file.
+Moving label "net1256" from metal2 to via2 in cell register_file.
+Moving label "net1258" from metal3 to via3 in cell register_file.
+Moving label "net1259" from metal3 to via3 in cell register_file.
+Moving label "net1260" from metal2 to via2 in cell register_file.
+Moving label "net1278" from metal2 to via2 in cell register_file.
+Moving label "net132" from metal3 to via3 in cell register_file.
+Moving label "net136" from metal3 to via2 in cell register_file.
+Moving label "net19" from metal3 to via3 in cell register_file.
+Moving label "net199" from metal2 to via2 in cell register_file.
+Moving label "net215" from metal2 to via2 in cell register_file.
+Moving label "net225" from metal1 to via1 in cell register_file.
+Moving label "net227" from metal3 to via3 in cell register_file.
+Moving label "net25" from metal2 to via2 in cell register_file.
+Moving label "net269" from metal3 to via3 in cell register_file.
+Moving label "net278" from metal2 to via2 in cell register_file.
+Moving label "net285" from metal3 to via3 in cell register_file.
+Moving label "net305" from metal3 to via3 in cell register_file.
+Moving label "net330" from metal3 to via2 in cell register_file.
+Moving label "net340" from metal2 to via2 in cell register_file.
+Moving label "net35" from metal2 to via2 in cell register_file.
+Moving label "net392" from metal3 to via3 in cell register_file.
+Moving label "net396" from metal2 to via2 in cell register_file.
+Moving label "net400" from metal3 to via3 in cell register_file.
+Moving label "net403" from metal3 to via3 in cell register_file.
+Moving label "net407" from metal2 to via2 in cell register_file.
+Moving label "net41" from metal2 to via2 in cell register_file.
+Moving label "net44" from metal2 to via2 in cell register_file.
+Moving label "net448" from metal2 to via1 in cell register_file.
+Moving label "net45" from metal2 to via2 in cell register_file.
+Moving label "net458" from metal2 to via2 in cell register_file.
+Moving label "net472" from metal2 to via2 in cell register_file.
+Moving label "net490" from metal2 to via2 in cell register_file.
+Moving label "net516" from metal2 to via2 in cell register_file.
+Moving label "net562" from metal2 to via2 in cell register_file.
+Moving label "net571" from metal1 to via1 in cell register_file.
+Moving label "net583" from metal2 to via1 in cell register_file.
+Moving label "net587" from metal2 to via2 in cell register_file.
+Moving label "net609" from metal2 to via2 in cell register_file.
+Moving label "net615" from metal3 to via3 in cell register_file.
+Moving label "net625" from metal2 to via2 in cell register_file.
+Moving label "net626" from metal3 to via3 in cell register_file.
+Moving label "net641" from metal2 to via2 in cell register_file.
+Moving label "net644" from metal3 to via3 in cell register_file.
+Moving label "net653" from metal3 to via3 in cell register_file.
+Moving label "net715" from metal2 to via2 in cell register_file.
+Moving label "net720" from metal3 to via3 in cell register_file.
+Moving label "net753" from metal3 to via3 in cell register_file.
+Moving label "net754" from metal2 to via2 in cell register_file.
+Moving label "net777" from metal3 to via3 in cell register_file.
+Moving label "net795" from metal3 to via3 in cell register_file.
+Moving label "net806" from metal3 to via3 in cell register_file.
+Moving label "net811" from metal3 to via3 in cell register_file.
+Moving label "net813" from metal2 to via2 in cell register_file.
+Moving label "net817" from metal2 to via2 in cell register_file.
+Moving label "net821" from metal3 to via3 in cell register_file.
+Moving label "net823" from metal2 to via2 in cell register_file.
+Moving label "net844" from metal1 to via1 in cell register_file.
+Moving label "net853" from metal2 to via2 in cell register_file.
+Moving label "net858" from metal2 to via2 in cell register_file.
+Moving label "net862" from metal2 to via2 in cell register_file.
+Moving label "net887" from metal2 to via2 in cell register_file.
+Moving label "net894" from metal3 to via3 in cell register_file.
+Moving label "net896" from metal2 to via2 in cell register_file.
+Moving label "net925" from metal2 to via2 in cell register_file.
+Moving label "net947" from metal2 to via2 in cell register_file.
+Moving label "net952" from metal3 to via3 in cell register_file.
+Moving label "net970" from metal2 to via1 in cell register_file.
+Moving label "net994" from metal2 to via2 in cell register_file.
+Moving label "net998" from metal3 to via3 in cell register_file.
+Moving label "ram\[0\]\[28\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[10\]\[19\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[10\]\[28\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[11\]\[0\]" from metal3 to via3 in cell register_file.
+Moving label "ram\[11\]\[19\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[13\]\[13\]" from metal2 to via1 in cell register_file.
+Moving label "ram\[14\]\[6\]" from metal3 to via3 in cell register_file.
+Moving label "ram\[18\]\[6\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[19\]\[12\]" from metal3 to via3 in cell register_file.
+Moving label "ram\[19\]\[17\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[19\]\[18\]" from metal3 to via3 in cell register_file.
+Moving label "ram\[19\]\[2\]" from metal3 to via2 in cell register_file.
+Moving label "ram\[20\]\[13\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[22\]\[26\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[24\]\[8\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[25\]\[24\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[27\]\[7\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[29\]\[15\]" from metal3 to via3 in cell register_file.
+Moving label "ram\[29\]\[1\]" from metal3 to via2 in cell register_file.
+Moving label "ram\[29\]\[25\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[2\]\[21\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[2\]\[9\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[30\]\[10\]" from metal3 to via3 in cell register_file.
+Moving label "ram\[30\]\[20\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[30\]\[30\]" from metal3 to via3 in cell register_file.
+Moving label "ram\[3\]\[0\]" from metal2 to via2 in cell register_file.
+Moving label "ram\[3\]\[10\]" from metal3 to via3 in cell register_file.
+Moving label "ram\[5\]\[25\]" from metal1 to via1 in cell register_file.
+Moving label "ram\[8\]\[31\]" from metal2 to via2 in cell register_file.
+Moving label "rd1[0]" from metal2 to via2 in cell register_file.
+Moving label "rd1[12]" from metal2 to via2 in cell register_file.
+Moving label "rd1[16]" from metal2 to via2 in cell register_file.
+Moving label "rd1[20]" from metal2 to via2 in cell register_file.
+Moving label "rd1[24]" from metal2 to via2 in cell register_file.
+Moving label "rd1[28]" from metal2 to via2 in cell register_file.
+Moving label "rd1[4]" from metal2 to via2 in cell register_file.
+Moving label "rd1[8]" from metal2 to via2 in cell register_file.
+Moving label "we3" from metal2 to via2 in cell register_file.
+Processing register_file
+Extracting sky130_fd_sc_hd__decap_3 into sky130_fd_sc_hd__decap_3.ext:
+Extracting sky130_fd_sc_hd__diode_2 into sky130_fd_sc_hd__diode_2.ext:
+Extracting sky130_fd_sc_hd__fill_1 into sky130_fd_sc_hd__fill_1.ext:
+Extracting sky130_fd_sc_hd__decap_8 into sky130_fd_sc_hd__decap_8.ext:
+Extracting sky130_ef_sc_hd__decap_12 into sky130_ef_sc_hd__decap_12.ext:
+Extracting sky130_fd_sc_hd__fill_2 into sky130_fd_sc_hd__fill_2.ext:
+Extracting sky130_fd_sc_hd__tapvpwrvgnd_1 into sky130_fd_sc_hd__tapvpwrvgnd_1.ext:
+Extracting sky130_fd_sc_hd__buf_1 into sky130_fd_sc_hd__buf_1.ext:
+Extracting sky130_fd_sc_hd__decap_6 into sky130_fd_sc_hd__decap_6.ext:
+Extracting sky130_fd_sc_hd__decap_4 into sky130_fd_sc_hd__decap_4.ext:
+Extracting sky130_fd_sc_hd__o211a_4 into sky130_fd_sc_hd__o211a_4.ext:
+Extracting sky130_fd_sc_hd__buf_12 into sky130_fd_sc_hd__buf_12.ext:
+Extracting sky130_fd_sc_hd__dfxtp_4 into sky130_fd_sc_hd__dfxtp_4.ext:
+Extracting sky130_fd_sc_hd__buf_6 into sky130_fd_sc_hd__buf_6.ext:
+Extracting sky130_fd_sc_hd__mux2_8 into sky130_fd_sc_hd__mux2_8.ext:
+Extracting sky130_fd_sc_hd__mux4_1 into sky130_fd_sc_hd__mux4_1.ext:
+Extracting sky130_fd_sc_hd__o22a_4 into sky130_fd_sc_hd__o22a_4.ext:
+Extracting sky130_fd_sc_hd__mux4_2 into sky130_fd_sc_hd__mux4_2.ext:
+Extracting sky130_fd_sc_hd__buf_8 into sky130_fd_sc_hd__buf_8.ext:
+Extracting sky130_fd_sc_hd__clkbuf_8 into sky130_fd_sc_hd__clkbuf_8.ext:
+Extracting sky130_fd_sc_hd__a21o_4 into sky130_fd_sc_hd__a21o_4.ext:
+Extracting sky130_fd_sc_hd__clkbuf_16 into sky130_fd_sc_hd__clkbuf_16.ext:
+Extracting sky130_fd_sc_hd__buf_4 into sky130_fd_sc_hd__buf_4.ext:
+Extracting sky130_fd_sc_hd__clkbuf_4 into sky130_fd_sc_hd__clkbuf_4.ext:
+Extracting sky130_fd_sc_hd__mux2_4 into sky130_fd_sc_hd__mux2_4.ext:
+Extracting sky130_fd_sc_hd__dfxtp_1 into sky130_fd_sc_hd__dfxtp_1.ext:
+Extracting sky130_fd_sc_hd__nor2_8 into sky130_fd_sc_hd__nor2_8.ext:
+Extracting sky130_fd_sc_hd__or2_4 into sky130_fd_sc_hd__or2_4.ext:
+Extracting sky130_fd_sc_hd__o21a_2 into sky130_fd_sc_hd__o21a_2.ext:
+Extracting sky130_fd_sc_hd__and3_4 into sky130_fd_sc_hd__and3_4.ext:
+Extracting sky130_fd_sc_hd__a31o_2 into sky130_fd_sc_hd__a31o_2.ext:
+Extracting sky130_fd_sc_hd__a22o_4 into sky130_fd_sc_hd__a22o_4.ext:
+Extracting sky130_fd_sc_hd__o31a_4 into sky130_fd_sc_hd__o31a_4.ext:
+Extracting sky130_fd_sc_hd__dfxtp_2 into sky130_fd_sc_hd__dfxtp_2.ext:
+Extracting sky130_fd_sc_hd__o211a_1 into sky130_fd_sc_hd__o211a_1.ext:
+Extracting sky130_fd_sc_hd__mux2_2 into sky130_fd_sc_hd__mux2_2.ext:
+Extracting sky130_fd_sc_hd__nand3b_4 into sky130_fd_sc_hd__nand3b_4.ext:
+Extracting sky130_fd_sc_hd__o221a_4 into sky130_fd_sc_hd__o221a_4.ext:
+Extracting sky130_fd_sc_hd__nand2_8 into sky130_fd_sc_hd__nand2_8.ext:
+Extracting sky130_fd_sc_hd__o21a_1 into sky130_fd_sc_hd__o21a_1.ext:
+Extracting sky130_fd_sc_hd__nor2_2 into sky130_fd_sc_hd__nor2_2.ext:
+Extracting sky130_fd_sc_hd__o21a_4 into sky130_fd_sc_hd__o21a_4.ext:
+Extracting sky130_fd_sc_hd__dlymetal6s2s_1 into sky130_fd_sc_hd__dlymetal6s2s_1.ext:
+Extracting sky130_fd_sc_hd__clkinv_2 into sky130_fd_sc_hd__clkinv_2.ext:
+Extracting sky130_fd_sc_hd__a22o_1 into sky130_fd_sc_hd__a22o_1.ext:
+Extracting sky130_fd_sc_hd__a32o_4 into sky130_fd_sc_hd__a32o_4.ext:
+Extracting sky130_fd_sc_hd__clkbuf_2 into sky130_fd_sc_hd__clkbuf_2.ext:
+Extracting sky130_fd_sc_hd__a31o_4 into sky130_fd_sc_hd__a31o_4.ext:
+Extracting sky130_fd_sc_hd__mux2_1 into sky130_fd_sc_hd__mux2_1.ext:
+Extracting sky130_fd_sc_hd__o21ba_4 into sky130_fd_sc_hd__o21ba_4.ext:
+Extracting sky130_fd_sc_hd__nor2_1 into sky130_fd_sc_hd__nor2_1.ext:
+Extracting sky130_fd_sc_hd__a22o_2 into sky130_fd_sc_hd__a22o_2.ext:
+Extracting sky130_fd_sc_hd__nor2_4 into sky130_fd_sc_hd__nor2_4.ext:
+Extracting sky130_fd_sc_hd__a21o_1 into sky130_fd_sc_hd__a21o_1.ext:
+Extracting sky130_fd_sc_hd__or3b_4 into sky130_fd_sc_hd__or3b_4.ext:
+Extracting sky130_fd_sc_hd__buf_2 into sky130_fd_sc_hd__buf_2.ext:
+Extracting sky130_fd_sc_hd__or2b_4 into sky130_fd_sc_hd__or2b_4.ext:
+Extracting sky130_fd_sc_hd__bufinv_8 into sky130_fd_sc_hd__bufinv_8.ext:
+Extracting sky130_fd_sc_hd__inv_16 into sky130_fd_sc_hd__inv_16.ext:
+Extracting sky130_fd_sc_hd__nand3_2 into sky130_fd_sc_hd__nand3_2.ext:
+Extracting sky130_fd_sc_hd__inv_2 into sky130_fd_sc_hd__inv_2.ext:
+Extracting sky130_fd_sc_hd__o21ai_4 into sky130_fd_sc_hd__o21ai_4.ext:
+Extracting sky130_fd_sc_hd__inv_8 into sky130_fd_sc_hd__inv_8.ext:
+Extracting sky130_fd_sc_hd__o22a_2 into sky130_fd_sc_hd__o22a_2.ext:
+Extracting sky130_fd_sc_hd__nor2b_4 into sky130_fd_sc_hd__nor2b_4.ext:
+Extracting sky130_fd_sc_hd__a211o_4 into sky130_fd_sc_hd__a211o_4.ext:
+Extracting sky130_fd_sc_hd__o221ai_4 into sky130_fd_sc_hd__o221ai_4.ext:
+Extracting sky130_fd_sc_hd__or3_4 into sky130_fd_sc_hd__or3_4.ext:
+Extracting sky130_fd_sc_hd__and2_4 into sky130_fd_sc_hd__and2_4.ext:
+Extracting sky130_fd_sc_hd__o311a_4 into sky130_fd_sc_hd__o311a_4.ext:
+Extracting sky130_fd_sc_hd__or2_1 into sky130_fd_sc_hd__or2_1.ext:
+Extracting sky130_fd_sc_hd__or2_2 into sky130_fd_sc_hd__or2_2.ext:
+Extracting sky130_fd_sc_hd__a32o_2 into sky130_fd_sc_hd__a32o_2.ext:
+Extracting sky130_fd_sc_hd__o211a_2 into sky130_fd_sc_hd__o211a_2.ext:
+Extracting sky130_fd_sc_hd__bufinv_16 into sky130_fd_sc_hd__bufinv_16.ext:
+Extracting sky130_fd_sc_hd__inv_6 into sky130_fd_sc_hd__inv_6.ext:
+Extracting sky130_fd_sc_hd__clkinvlp_4 into sky130_fd_sc_hd__clkinvlp_4.ext:
+Extracting sky130_fd_sc_hd__and3b_4 into sky130_fd_sc_hd__and3b_4.ext:
+Extracting sky130_fd_sc_hd__inv_4 into sky130_fd_sc_hd__inv_4.ext:
+Extracting sky130_fd_sc_hd__nand2_2 into sky130_fd_sc_hd__nand2_2.ext:
+Extracting sky130_fd_sc_hd__clkinv_4 into sky130_fd_sc_hd__clkinv_4.ext:
+Extracting sky130_fd_sc_hd__clkinv_1 into sky130_fd_sc_hd__clkinv_1.ext:
+Extracting sky130_fd_sc_hd__o31a_2 into sky130_fd_sc_hd__o31a_2.ext:
+Extracting sky130_fd_sc_hd__o221a_1 into sky130_fd_sc_hd__o221a_1.ext:
+Extracting sky130_fd_sc_hd__clkbuf_1 into sky130_fd_sc_hd__clkbuf_1.ext:
+Extracting sky130_fd_sc_hd__o2111a_4 into sky130_fd_sc_hd__o2111a_4.ext:
+Extracting sky130_fd_sc_hd__clkinv_16 into sky130_fd_sc_hd__clkinv_16.ext:
+Extracting sky130_fd_sc_hd__o22a_1 into sky130_fd_sc_hd__o22a_1.ext:
+Extracting sky130_fd_sc_hd__a21oi_4 into sky130_fd_sc_hd__a21oi_4.ext:
+Extracting sky130_fd_sc_hd__a21o_2 into sky130_fd_sc_hd__a21o_2.ext:
+Extracting sky130_fd_sc_hd__o221a_2 into sky130_fd_sc_hd__o221a_2.ext:
+Extracting sky130_fd_sc_hd__and2_1 into sky130_fd_sc_hd__and2_1.ext:
+Extracting sky130_fd_sc_hd__a32o_1 into sky130_fd_sc_hd__a32o_1.ext:
+Extracting sky130_fd_sc_hd__a22oi_2 into sky130_fd_sc_hd__a22oi_2.ext:
+Extracting sky130_fd_sc_hd__and2b_4 into sky130_fd_sc_hd__and2b_4.ext:
+Extracting sky130_fd_sc_hd__and2b_1 into sky130_fd_sc_hd__and2b_1.ext:
+Extracting sky130_fd_sc_hd__inv_12 into sky130_fd_sc_hd__inv_12.ext:
+Extracting register_file into register_file.ext:
+exttospice finished.
