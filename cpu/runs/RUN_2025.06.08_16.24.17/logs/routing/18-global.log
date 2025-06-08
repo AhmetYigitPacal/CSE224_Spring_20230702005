@@ -1,0 +1,1256 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+define_corners Typical
+read_liberty -corner Typical /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+[INFO]: Reading ODB at '/openlane/designs/cpu/runs/RUN_2025.06.08_16.24.17/tmp/16-cpu.odb'…
+Reading design constraints file at '/openlane/designs/cpu/src/cpu.sdc'…
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met3. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose -congestion_report_file /openlane/designs/cpu/runs/RUN_2025.06.08_16.24.17/tmp/routing/groute-congestion.rpt
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 355 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 19
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 26739
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal    2646976       1301299          50.84%
+met2       Vertical      1981995       1302740          34.27%
+met3       Horizontal    1323488        902170          31.83%
+met4       Vertical       793162        397838          49.84%
+met5       Horizontal     264625        104618          60.47%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 49451
+[INFO GRT-0198] Via related Steiner nodes: 2743
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 88282
+[INFO GRT-0112] Final usage 3D: 2220756
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1           1301299        758864           58.32%             0 /  0 /  0
+met2           1302740        766355           58.83%             0 /  0 /  0
+met3            902170        226504           25.11%             0 /  0 /  0
+met4            397838        201387           50.62%             0 /  0 /  0
+met5            104618          2800            2.68%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total          4008665       1955910           48.79%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 13811861 um
+[INFO GRT-0014] Routed nets: 8035
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[WARNING ANT-0009] Net _00001_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00002_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00002_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00016_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00016_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00017_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00018_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00020_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00021_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00033_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00036_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00036_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00037_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00040_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00042_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00044_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00044_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00047_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00047_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00052_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00052_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00057_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00057_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00058_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00058_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00058_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00061_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00064_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00064_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00067_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00067_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00069_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00069_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00070_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00070_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00070_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00071_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00074_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00076_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00086_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00087_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00087_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00089_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00094_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00100_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00100_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00101_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00101_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00106_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00107_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00108_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00110_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00111_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00111_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00116_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00117_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00117_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00121_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00122_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00128_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00128_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00128_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00130_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00131_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00131_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00134_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00134_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00136_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00136_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00137_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00140_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00145_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00146_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00146_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00147_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00147_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00152_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00153_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00153_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00153_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00154_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00157_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00158_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00158_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00163_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00166_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00168_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00168_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00169_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00172_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00172_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00173_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00173_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00175_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00175_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00179_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00183_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00184_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00184_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00185_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00186_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00186_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00190_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00190_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00195_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00195_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00196_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00196_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00197_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00197_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00203_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00205_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00212_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00213_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00213_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00214_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00217_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00220_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00222_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00223_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00223_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00224_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00229_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00230_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00231_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00232_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00234_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00234_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00237_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00240_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00241_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00241_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00242_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00245_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00246_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00248_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00255_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00255_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00257_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00260_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00263_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00263_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00264_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00264_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00266_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00267_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00268_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00270_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00274_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00276_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00278_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00280_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00280_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00281_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00281_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00284_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00284_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00285_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00287_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00294_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00294_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00296_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00297_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00297_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00302_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00306_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00307_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00311_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00313_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00316_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00317_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00318_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00320_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00324_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00324_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00325_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00327_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00330_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00332_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00332_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00334_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00334_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00335_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00335_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00336_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00343_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00345_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00345_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00348_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00348_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00350_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00354_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00355_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00355_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00360_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00360_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00361_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00362_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00362_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00364_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00365_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00366_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00369_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00376_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00376_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00378_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00379_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00379_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00385_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00385_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00386_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00387_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00388_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00389_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00389_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00393_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00397_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00398_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00398_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00400_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00401_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00401_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00402_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00403_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00403_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00404_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00404_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00405_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00405_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00407_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00407_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00408_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00411_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00412_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00413_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00414_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00414_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00416_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00416_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00416_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00420_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00421_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00421_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00424_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00427_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00428_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00429_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00430_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00431_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00431_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00434_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00439_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00439_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00440_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00440_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00446_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00446_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00447_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00447_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00452_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00453_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00454_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00457_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00459_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00459_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00460_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00460_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00460_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00461_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00464_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00468_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00468_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00469_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00470_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00474_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00474_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00479_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00479_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00481_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00482_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00484_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00486_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00486_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00487_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00490_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00492_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00492_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00495_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00495_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00497_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00497_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00498_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00499_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00499_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00502_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00503_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00505_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00507_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00507_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00508_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00509_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00509_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00511_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00512_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00515_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00515_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00517_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00517_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00518_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00518_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00519_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00520_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00520_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00521_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00522_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00525_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00525_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00529_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00532_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00533_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00536_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00537_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00539_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00540_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00541_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00541_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00543_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00544_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00546_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00547_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00548_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00550_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00550_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00552_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00552_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00556_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00556_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00558_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00560_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00561_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00563_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00563_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00566_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00568_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00568_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00569_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00575_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00576_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00577_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00577_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00578_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00582_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00584_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00587_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00588_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00589_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00590_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00591_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00592_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00595_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00602_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00603_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00607_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00607_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00608_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00608_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00609_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00609_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00619_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00620_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00620_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00625_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00626_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00627_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00627_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00630_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00633_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00634_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00638_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00638_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00641_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00644_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00645_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00646_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00648_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00648_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00651_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00651_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00656_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00656_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00658_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00662_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00662_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00666_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00667_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00673_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00676_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00676_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00678_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00678_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00680_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00682_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00682_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00684_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00686_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00687_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00688_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00688_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00693_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00694_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00694_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00698_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00699_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00707_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00708_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00709_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00715_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00718_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00719_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00720_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00720_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00725_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00725_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00726_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00727_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00730_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00731_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00731_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00732_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00735_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00737_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00739_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00741_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00742_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00744_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00746_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00748_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00751_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00752_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00759_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00766_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00768_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00769_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00769_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00773_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00776_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00776_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00780_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00784_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00784_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00787_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00787_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00788_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00791_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00791_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00795_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00797_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00798_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00800_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00807_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00808_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00808_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00809_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00810_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00810_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00811_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00811_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00813_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00813_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00815_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00815_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00819_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00819_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00821_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00821_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00823_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00823_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00824_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00825_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00828_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00833_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00833_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00833_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00834_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00841_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00842_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00843_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00844_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00847_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00851_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00854_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00855_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00856_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00862_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00862_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00863_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00865_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00865_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00866_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00870_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00872_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00874_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00881_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00884_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00884_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00886_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00887_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00888_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00891_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00891_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00895_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00896_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00896_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00897_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00901_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00903_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00908_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00911_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00923_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00925_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00925_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00927_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00933_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00934_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00934_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00935_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00936_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00936_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00937_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00943_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00944_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00944_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00945_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00951_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00952_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00954_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00955_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00958_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00959_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00959_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00960_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00962_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00963_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00964_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00964_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00968_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00971_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00973_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00974_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00974_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00975_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00976_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00976_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00977_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00977_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00978_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00981_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00983_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00983_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00992_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00992_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _00996_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01000_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01000_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01001_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01003_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01009_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01013_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01015_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01016_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01017_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01020_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01022_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01022_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01023_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01023_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01024_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01025_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01028_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01029_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01031_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01031_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01033_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01038_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01039_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01040_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01044_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01046_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01049_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01049_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01050_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01052_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01054_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01054_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01056_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01058_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01058_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01061_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01062_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01062_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01067_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01067_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01068_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01069_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01069_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01071_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01072_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01073_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01073_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01074_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01075_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01077_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01078_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01079_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01080_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01080_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01081_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01081_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01082_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01082_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01083_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01083_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01084_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01084_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01084_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01092_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01094_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01097_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01098_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01098_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01102_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01104_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01108_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01111_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01111_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01112_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01112_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01114_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01114_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01116_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01118_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01119_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01119_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01119_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01120_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01121_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01122_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01123_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01130_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01131_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01172_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01191_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01201_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01291_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01296_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01296_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01379_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01384_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01416_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01435_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01453_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01470_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01476_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01482_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01517_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01520_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01537_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01584_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01617_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01648_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01653_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01687_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01695_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01718_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01751_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01751_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01784_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01785_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01788_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01811_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01817_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01820_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01820_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01893_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _01919_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02220_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02225_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02251_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02306_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02354_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02368_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02374_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02388_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02388_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02427_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02494_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02535_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02535_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02555_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02556_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02562_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02562_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02565_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02596_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02636_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02662_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02662_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02668_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02757_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02776_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02779_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02812_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02834_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02858_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02871_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02879_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02879_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02890_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02903_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02912_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02914_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02954_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02965_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02998_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _02998_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03014_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03026_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03040_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03040_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03046_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03052_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03060_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03101_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03107_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03115_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03170_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03190_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03196_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03225_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03225_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03288_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03305_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03305_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03310_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03317_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03324_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03365_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03375_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03378_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03400_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03407_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03409_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03409_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03423_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03423_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03473_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03479_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03502_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03519_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03521_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03521_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03551_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03566_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03616_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03653_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03726_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03740_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03746_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03812_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03818_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03823_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03855_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03855_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03867_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03921_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _03983_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04025_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04025_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04036_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04036_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04045_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04045_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04078_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04084_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04099_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04123_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04130_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04171_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04182_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04217_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04217_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04256_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04284_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04300_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04302_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04306_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04320_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04320_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04359_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04359_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04362_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04376_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04394_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04418_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04428_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04428_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04443_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04443_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _04451_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[0\]\[16\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[0\]\[2\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[10\]\[18\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[10\]\[30\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[10\]\[3\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[11\]\[14\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[11\]\[15\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[11\]\[16\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[11\]\[18\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[11\]\[25\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[11\]\[2\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[11\]\[3\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[12\]\[10\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[12\]\[22\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[12\]\[24\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[12\]\[30\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[12\]\[5\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[13\]\[4\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[14\]\[7\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[15\]\[12\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[15\]\[16\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[15\]\[24\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[15\]\[25\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[15\]\[26\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[15\]\[2\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[15\]\[3\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[16\]\[0\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[16\]\[21\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[16\]\[24\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[17\]\[12\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[17\]\[19\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[18\]\[0\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[18\]\[27\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[18\]\[30\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[18\]\[7\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[19\]\[16\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[19\]\[20\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[19\]\[20\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[19\]\[2\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[19\]\[4\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[1\]\[11\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[1\]\[12\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[1\]\[13\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[1\]\[31\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[1\]\[4\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[20\]\[12\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[20\]\[24\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[20\]\[25\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[20\]\[9\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[21\]\[21\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[21\]\[8\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[22\]\[12\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[22\]\[21\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[22\]\[23\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[22\]\[24\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[22\]\[29\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[22\]\[6\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[23\]\[10\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[23\]\[12\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[23\]\[13\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[23\]\[13\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[23\]\[18\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[23\]\[25\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[23\]\[30\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[23\]\[31\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[23\]\[4\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[24\]\[0\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[24\]\[16\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[24\]\[18\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[25\]\[15\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[25\]\[16\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[25\]\[20\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[25\]\[20\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[25\]\[26\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[25\]\[4\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[26\]\[0\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[26\]\[14\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[26\]\[30\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[27\]\[12\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[28\]\[13\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[28\]\[30\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[28\]\[5\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[29\]\[11\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[29\]\[16\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[29\]\[22\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[29\]\[30\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[29\]\[4\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[29\]\[8\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[2\]\[7\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[30\]\[2\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[30\]\[6\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[31\]\[12\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[31\]\[21\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[3\]\[18\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[3\]\[1\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[3\]\[21\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[3\]\[22\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[3\]\[24\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[3\]\[31\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[3\]\[4\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[4\]\[21\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[4\]\[24\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[4\]\[28\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[4\]\[7\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[4\]\[8\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[5\]\[17\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[5\]\[21\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[5\]\[26\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[6\]\[23\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[6\]\[26\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[6\]\[30\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[6\]\[8\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[7\]\[13\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[7\]\[14\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[7\]\[19\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[7\]\[21\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[7\]\[31\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[8\]\[11\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[8\]\[5\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[9\]\[16\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[9\]\[16\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[9\]\[18\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[9\]\[20\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[9\]\[3\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net decoder.rf.ram\[9\]\[9\] requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net3 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net5 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net6 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net10 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net14 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net23 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net23 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net33 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net33 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net36 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net36 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net71 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net82 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net122 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net138 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net151 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net151 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net157 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net157 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net157 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net166 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net173 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net173 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net198 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net232 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net239 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net255 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net261 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net281 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net302 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net303 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net314 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net348 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net351 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net429 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net451 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net505 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net505 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net506 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net506 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net516 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net526 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net532 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net549 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net549 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net635 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net637 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net637 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net643 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net671 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net692 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net710 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net720 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net746 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net772 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net789 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net815 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net819 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net852 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net899 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net900 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net902 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net904 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net999 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net1022 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net1066 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] message limit reached, this message will no longer print
+[INFO GRT-0012] Found 4039 antenna violations.
+[INFO GRT-0015] Inserted 35250 diodes.
+[INFO GRT-0054] Using detailed placer to place 2294 diodes.
+[INFO GRT-0009] rerouting 6278 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 68
+[INFO GRT-0006] Repairing antennas, iteration 2.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 1600 antenna violations.
+[INFO GRT-0015] Inserted 38343 diodes.
+[INFO GRT-0054] Using detailed placer to place 7908 diodes.
+[INFO GRT-0009] rerouting 5576 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 456
+[INFO GRT-0006] Repairing antennas, iteration 3.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 785 antenna violations.
+[INFO GRT-0015] Inserted 9321 diodes.
+[INFO GRT-0054] Using detailed placer to place 1771 diodes.
+[INFO GRT-0009] rerouting 3279 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 456
+[INFO GRT-0006] Repairing antennas, iteration 4.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 409 antenna violations.
+[INFO GRT-0015] Inserted 5790 diodes.
+[INFO GRT-0054] Using detailed placer to place 1120 diodes.
+[INFO GRT-0009] rerouting 1675 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 456
+[INFO GRT-0006] Repairing antennas, iteration 5.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 217 antenna violations.
+[INFO GRT-0015] Inserted 3753 diodes.
+[INFO GRT-0054] Using detailed placer to place 405 diodes.
+[INFO GRT-0009] rerouting 987 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 356
+[INFO GRT-0006] Repairing antennas, iteration 6.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 121 antenna violations.
+[INFO GRT-0015] Inserted 2474 diodes.
+[INFO GRT-0054] Using detailed placer to place 637 diodes.
+[INFO GRT-0009] rerouting 580 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 443
+[INFO GRT-0006] Repairing antennas, iteration 7.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 65 antenna violations.
+[INFO GRT-0015] Inserted 1112 diodes.
+[INFO GRT-0054] Using detailed placer to place 237 diodes.
+[INFO GRT-0009] rerouting 309 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 443
+[INFO GRT-0006] Repairing antennas, iteration 8.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 27 antenna violations.
+[INFO GRT-0015] Inserted 828 diodes.
+[INFO GRT-0054] Using detailed placer to place 223 diodes.
+[INFO GRT-0009] rerouting 142 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 443
+[INFO GRT-0006] Repairing antennas, iteration 9.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 22 antenna violations.
+[INFO GRT-0015] Inserted 289 diodes.
+[INFO GRT-0054] Using detailed placer to place 52 diodes.
+[INFO GRT-0009] rerouting 92 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 213
+[INFO GRT-0006] Repairing antennas, iteration 10.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 9 antenna violations.
+[INFO GRT-0015] Inserted 167 diodes.
+[INFO GRT-0054] Using detailed placer to place 45 diodes.
+[INFO GRT-0009] rerouting 38 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 194
+[INFO GRT-0006] Repairing antennas, iteration 11.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 2 antenna violations.
+[INFO GRT-0015] Inserted 9 diodes.
+[INFO GRT-0009] rerouting 12 nets.
+[INFO GRT-0001] Minimum degree: 9
+[INFO GRT-0002] Maximum degree: 194
+[INFO GRT-0006] Repairing antennas, iteration 12.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 4 antenna violations.
+[INFO GRT-0015] Inserted 13 diodes.
+[INFO GRT-0009] rerouting 15 nets.
+[INFO GRT-0001] Minimum degree: 8
+[INFO GRT-0002] Maximum degree: 194
+[INFO GRT-0006] Repairing antennas, iteration 13.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 1 antenna violations.
+[INFO GRT-0015] Inserted 1 diodes.
+[INFO GRT-0009] rerouting 1 nets.
+[INFO GRT-0001] Minimum degree: 16
+[INFO GRT-0002] Maximum degree: 16
+[INFO GRT-0006] Repairing antennas, iteration 14.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 1 antenna violations.
+[INFO GRT-0015] Inserted 1 diodes.
+[INFO GRT-0009] rerouting 1 nets.
+[INFO GRT-0001] Minimum degree: 17
+[INFO GRT-0002] Maximum degree: 17
+[INFO GRT-0006] Repairing antennas, iteration 15.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 1 antenna violations.
+[INFO GRT-0015] Inserted 1 diodes.
+[INFO GRT-0009] rerouting 1 nets.
+[INFO GRT-0001] Minimum degree: 18
+[INFO GRT-0002] Maximum degree: 18
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL        13120861.3 u
+legalized HPWL       13120861.3 u
+delta HPWL                    0 %
+
+[INFO DPL-0020] Mirrored 22264 instances
+[INFO DPL-0021] HPWL before          13120861.3 u
+[INFO DPL-0022] HPWL after           13106897.9 u
+[INFO DPL-0023] HPWL delta               -0.1 %
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met3. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose -congestion_report_file /openlane/designs/cpu/runs/RUN_2025.06.08_16.24.17/tmp/routing/groute-congestion.rpt
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 355 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 456
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 26739
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal    2646976       1301236          50.84%
+met2       Vertical      1981995       1302740          34.27%
+met3       Horizontal    1323488        902170          31.83%
+met4       Vertical       793162        397838          49.84%
+met5       Horizontal     264625        104618          60.47%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 138757
+[INFO GRT-0198] Via related Steiner nodes: 3120
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 192793
+[INFO GRT-0112] Final usage 3D: 2566640
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1           1301236        772344           59.35%             0 /  0 /  0
+met2           1302740        786715           60.39%             0 /  0 /  0
+met3            902170        229967           25.49%             0 /  0 /  0
+met4            397838        196349           49.35%             0 /  0 /  0
+met5            104618          2886            2.76%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total          4008602       1988261           49.60%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 14349943 um
+[INFO GRT-0014] Routed nets: 8035
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/cpu/runs/RUN_2025.06.08_16.24.17/tmp/routing/18-global.odb'…
+Writing layout to '/openlane/designs/cpu/runs/RUN_2025.06.08_16.24.17/tmp/routing/18-global.def'…
+Writing routing guides to '/openlane/designs/cpu/runs/RUN_2025.06.08_16.24.17/tmp/routing/18-global.guide'…

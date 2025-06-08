@@ -1,0 +1,13 @@
+[WARNING GRT-0026] Missing route to pin rebuffer23/A.
+[WARNING GRT-0026] Missing route to pin rebuffer4/A.
+[WARNING GRT-0026] Missing route to pin rebuffer18/A.
+[WARNING GRT-0026] Missing route to pin _05609_/A.
+[WARNING GRT-0026] Missing route to pin rebuffer48/A.
+[WARNING GRT-0026] Missing route to pin _08294_/C.
+[WARNING GRT-0026] Missing route to pin _05609_/B.
+[WARNING GRT-0026] Missing route to pin rebuffer58/A.
+[WARNING GRT-0026] Missing route to pin rebuffer43/X.
+[WARNING GRT-0026] Missing route to pin rebuffer58/X.
+Warning: There are 2 input ports missing set_input_delay.
+Warning: There are 8 unconstrained endpoints.
+[WARNING] Did not save OpenROAD database!
