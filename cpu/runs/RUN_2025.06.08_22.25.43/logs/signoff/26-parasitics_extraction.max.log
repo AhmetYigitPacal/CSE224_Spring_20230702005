@@ -1,0 +1,56 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /openlane/designs/cpu/runs/RUN_2025.06.08_22.25.43/tmp/merged.max.lef, created 13 layers, 25 vias, 441 library cells
+[INFO ODB-0127] Reading DEF file: /openlane/designs/cpu/runs/RUN_2025.06.08_22.25.43/results/routing/cpu.def
+[INFO ODB-0128] Design: cpu
+[INFO ODB-0094] 		Created 100000 Insts
+[INFO ODB-0094] 		Created 200000 Insts
+[INFO ODB-0094] 		Created 300000 Insts
+[INFO ODB-0094] 		Created 400000 Insts
+[INFO ODB-0094] 		Created 500000 Insts
+[INFO ODB-0094] 		Created 600000 Insts
+[INFO ODB-0094] 		Created 700000 Insts
+[INFO ODB-0130]     Created 13 pins.
+[INFO ODB-0131]     Created 768704 components and 3020949 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2897642 connections.
+[INFO ODB-0133]     Created 7932 nets and 123191 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/cpu/runs/RUN_2025.06.08_22.25.43/results/routing/cpu.def
+define_corners Typical
+read_liberty -corner Typical /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Using RCX ruleset '/root/.volare/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.calibre'...
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of cpu ...
+[INFO RCX-0435] Reading extraction model file /root/.volare/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.calibre ...
+[INFO RCX-0436] RC segment generation cpu (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 323706 rc segments
+[INFO RCX-0439] Coupling Cap extraction cpu ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 457338 wires to be extracted
+[INFO RCX-0442] 12% completion -- 57713 wires have been extracted
+[INFO RCX-0442] 26% completion -- 119590 wires have been extracted
+[INFO RCX-0442] 39% completion -- 182055 wires have been extracted
+[INFO RCX-0442] 53% completion -- 243563 wires have been extracted
+[INFO RCX-0442] 72% completion -- 329647 wires have been extracted
+[INFO RCX-0442] 81% completion -- 373131 wires have been extracted
+[INFO RCX-0442] 87% completion -- 400011 wires have been extracted
+[INFO RCX-0442] 93% completion -- 426115 wires have been extracted
+[INFO RCX-0442] 100% completion -- 457338 wires have been extracted
+[INFO RCX-0045] Extract 7932 nets, 331589 rsegs, 331589 caps, 385141 ccs
+[INFO RCX-0015] Finished extracting cpu.
+Writing result to /openlane/designs/cpu/runs/RUN_2025.06.08_22.25.43/results/routing/mca/process_corner_max/cpu.spef...
+Setting global connections for newly added cells…
+[WARNING] Did not save OpenROAD database!
+Writing extracted parasitics to '/openlane/designs/cpu/runs/RUN_2025.06.08_22.25.43/results/routing/mca/process_corner_max/cpu.spef'…
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 7932 nets finished
+[INFO RCX-0017] Finished writing SPEF ...

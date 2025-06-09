@@ -1,0 +1,22 @@
+%Warning-WIDTHEXPAND: /openlane/designs/cpu/src/instruction_decoder.v:86:43: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'c' generates 19 bits.
+                                                                           : ... note: In instance 'cpu.decoder'
+   86 |                             result <= rd2 + c;
+      |                                           ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.018
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /openlane/designs/cpu/src/instruction_decoder.v:87:40: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'c' generates 19 bits.
+                                                                           : ... note: In instance 'cpu.decoder'
+   87 |                             wd3 <= rd2 + c;
+      |                                        ^
+%Warning-WIDTHEXPAND: /openlane/designs/cpu/src/instruction_decoder.v:91:43: Operator SUB expects 32 bits on the RHS, but RHS's VARREF 'c' generates 19 bits.
+                                                                           : ... note: In instance 'cpu.decoder'
+   91 |                             result <= rd2 - c;
+      |                                           ^
+%Warning-WIDTHEXPAND: /openlane/designs/cpu/src/instruction_decoder.v:92:40: Operator SUB expects 32 bits on the RHS, but RHS's VARREF 'c' generates 19 bits.
+                                                                           : ... note: In instance 'cpu.decoder'
+   92 |                             wd3 <= rd2 - c;
+      |                                        ^
+%Warning-UNUSEDSIGNAL: /openlane/designs/cpu/src/cpu.v:10:17: Bits of signal are not used: 'result'[31:4]
+                                                            : ... note: In instance 'cpu'
+   10 |     wire [31:0] result;
+      |                 ^~~~~~
